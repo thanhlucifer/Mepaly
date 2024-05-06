@@ -1,0 +1,256 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+
+.container {
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+header .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header_content nav ul li {
+    display: inline-block;
+    margin-right:25px ;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+header {
+    padding: 20px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.308)
+}
+
+header .header_content  a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+header .header_logo {
+    font-size: 32px;
+    text-transform: lowercase;
+}
+header nav ul li{
+    padding: 0 20px;
+}
+
+header nav ul li .active {
+    color: #e62b4a;
+}
+
+header nav ul li a:hover{
+    color: #e62b4a;
+}
+
+/* banner */
+.banner {
+    background-image: url(./../img/home_slider.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* cach dung flex box de can giua noi dung theo chieu ngang va doc */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    text-transform:capitalize;
+}
+
+
+.banner .banner_subtitle {
+    font-size: 25px;
+}
+
+.banner h1 {
+    font-size: 75px; 
+    /* line-height thuong lon hon font-size khoang 10px */
+    line-height: 85px;
+}
+
+.banner button {
+    padding: 10px 30px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #e62b4a;
+    border: 1px solid #e62b4a;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.banner button:hover {
+    background-color: #AF2239;
+}
+
+
+/*  service */
+
+.service {
+    background-color: black;
+    color: white;
+}
+
+.demo5 {
+    background-color: black;
+    width: 100%;
+}
+
+.flex_container {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    /* thuoc tinh dieu khien cac phan tu  dua tren  truc chinh */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+
+    /* thuoc tinh dieu chinh cac phan tu dua tren chiu doc (truc phu) */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+
+    /* thay doi thuoc tinh cua flex box  */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
+}
+
+.flex_item1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.flex_item2 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.flex_item3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(79, 197, 142);
+}
+
+.flex_item4 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(223, 22, 132);
+}
+
+
+
+
+
+/* flex chỉ có một thẻ con trực tiếp  */
+.flextest {
+    display: flex;
+    /* căn giữa theo chiều ngang */
+    justify-content: center;
+    /* căn giữa theo chiều dọc  */
+    align-items: center;
+}
+
+/* fex có nhiều thẻ con trục tiếp  */
+.flextest2 {
+    display:flex;
+    /* đổi chiều sắp xếp thẻ con */
+    flex-direction: column;
+    /* căn giữa theo chiều ngang */
+    justify-content: center;
+    /* căn giữa theo chiều dọc  */
+    align-items: center;
+}
+
+/* lv3 */
+#pond {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* lv4 */
+
+#pondlv4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* lv5  can theo chieu doc */
+
+#pondlv5 {
+    display: flex;
+    align-items: flex-end;
+}
+/* ket hop jusitfy-content va align-items de con ech ra chinh giua */
+
+#pondlv6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pondlv7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/* flex-direction */
+#pondlv8 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#pondlv9 {
+    display: flex;
+    flex-direction: column;
+}
+
+#pondlv10 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+#pondlv11 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#pondlv12 { 
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+}
+
+#pondlv13 { 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+}
