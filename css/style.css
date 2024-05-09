@@ -118,7 +118,7 @@ header nav ul li a:hover{
 
 .service .item_bg {
     background-color: white;
-    color: black;
+    color: #888888;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,9 +128,21 @@ header nav ul li a:hover{
     position: relative;
 }
 
+.service .item_bg i {
+    font-size: 50px;
+}
+
+.service .item_bg p {
+    text-transform:uppercase;
+}
+
 .service .service_item {
     padding: 0 15px;
     
+}
+
+.service .slick-dots {
+    bottom: -30px;
 }
 
 .service .slick-dots li button:before {
@@ -160,6 +172,10 @@ header nav ul li a:hover{
     font-weight: 700;
     margin-top: 20px;
 }
+
+
+
+
 
 
 
@@ -237,6 +253,7 @@ header nav ul li a:hover{
 
 .blog .blog_item {
     position: relative;
+    overflow: hidden;
 }
 
 .blog .blog_item .overlay {
@@ -250,6 +267,9 @@ header nav ul li a:hover{
     flex-direction: column;
     justify-content: space-between;
     padding: 25px;
+    opacity: 0;
+    transition: all 0.5s;
+    
 }
 
 .blog .blog_item .overlay .overlay_icon {
@@ -259,11 +279,119 @@ header nav ul li a:hover{
 .blog .blog_item .overlay .overlay_icon i {
     background-color: white;
     padding: 10px;
+    color: black;
+    transform: translateY(30px);
+    transition: all 0.7s;
 }
 
 .blog .blog_item .overlay .overlay_text {
     color: white;
+    transform: translateY(80px);
+    transition: all 0.7s;
 }
+
+.blog .blog_item .overlay .overlay_text span {
+    color: #D0C7C8;
+}
+
+.blog .blog_item:hover .overlay {
+    opacity: 1;
+    
+}
+
+.blog .blog_item .overlay:hover .overlay_icon i {
+    transform: translateY(0);
+}
+
+.blog .blog_item .overlay:hover .overlay_text {
+    transform: translateY(0);
+}
+
+.blog .blog_item .overlay .overlay_icon i:hover {
+    background-color: black;
+    color: #fff;
+}
+
+/* number */
+
+.number {
+    padding: 50px 0;
+    background-color: black;
+    color: white;
+}
+
+.number .number_content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.number .number_content p {
+    font-size: 60px;
+    line-height: 75px;
+}
+
+.number .number_content span {
+    color: #888888;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+
+/* digital */
+
+.digital {
+    padding: 100px 0;
+    background-image: url(./../img/bussiness_img_1.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.digital .digital_title {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
