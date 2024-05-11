@@ -677,3 +677,29 @@ footer {
     bottom: 0;
     
 }
+
+/* back to top */
+.backToTop{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+.backToTop i{
+    color: white;
+    background-color: #0000005b;
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+}
+
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
